@@ -24610,6 +24610,11 @@ Protein_chain_A     3
 ; Include ligand topology
 #include "jz4.itp"
 
+; Ligand position restraints
+#ifdef POSRES
+#include "posre_jz4.itp"
+#endif
+
 [ system ]
 ; Name
 LYSOZYME in water
